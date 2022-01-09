@@ -3,16 +3,30 @@ const accordion = (triggersSelector) => {
 
     btns.forEach(btn => {
         btn.addEventListener('click', function() {
+            let cloud = this.classList.contains('active-style')
+            hideAll()
             this.classList.toggle('active-style');
             this.nextElementSibling.classList.toggle('active-content');
 
-            if (this.classList.contains('active-style')) {
-                this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 80 + "px";
-            } else {
+            if (cloud) {
                 this.nextElementSibling.style.maxHeight = '0px';
+                this.classList.toggle('active-style');
+                this.nextElementSibling.classList.toggle('active-content');
+            } else {
+                this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 80 + "px";
             }
         });
+
+        function hideAll() {
+            btns.forEach(botton => {
+                botton.classList.toggle('active-style', false);
+                botton.nextElementSibling.classList.toggle('active-content', false);
+                botton.nextElementSibling.style.maxHeight = '0px';
+            });
+        }
     });
+
+
 
     //   blocks = document.querySelectorAll(itemsSelector);
 
