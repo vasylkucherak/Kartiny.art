@@ -1,4 +1,4 @@
-/* import {postData} from "../services/requests";
+import {postData} from "../services/requests";
 
 const forms = (state) => {
     const form = document.querySelectorAll('form');
@@ -89,4 +89,4 @@ const forms = (state) => {
     });
 };
 
-export default forms; */
+export default forms;
