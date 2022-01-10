@@ -1,5 +1,6 @@
 import modals from './modules/modals';
 import sliders from './modules/sliders';
+import forms from './modules/forms';
 import mask from './modules/mask';
 import checkTextInputs from './modules/checkTextInputs';
 import showMoreStyles from './modules/showMoreStyles';
@@ -9,7 +10,7 @@ import pictureSize from './modules/pictureSize';
 import accordion from './modules/accordion';
 import burger from './modules/burger';
 import scrolling from './modules/scrolling';
-import forms from './modules/forms';
+import drop from './modules/drag&drop';
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
     modals();
     sliders('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
     sliders('.main-slider-item', 'vertical');
+    forms();
     mask('[name="phone"]');
     checkTextInputs('[name="name"]');
     checkTextInputs('[name="message"]');
@@ -27,5 +29,5 @@ window.addEventListener('DOMContentLoaded', () => {
     accordion('.accordion-heading');
     burger('.burger-menu', '.burger');
     scrolling('.pageup');
-    forms();
+    drop();
 });

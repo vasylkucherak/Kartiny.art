@@ -3,8 +3,8 @@ const accordion = (triggersSelector) => {
 
     btns.forEach(btn => {
         btn.addEventListener('click', function() {
-            let cloud = this.classList.contains('active-style')
-            hideAll()
+            let cloud = this.classList.contains('active-style');
+            hideAll();
             this.classList.toggle('active-style');
             this.nextElementSibling.classList.toggle('active-content');
 

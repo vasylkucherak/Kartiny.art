@@ -1,7 +1,7 @@
 import {postData} from "../services/requests";
 
-const forms = (state) => {
-    const form = document.querySelectorAll('form');
+const forms = () => {
+    const form = document.querySelectorAll('form'),
           inputs = document.querySelectorAll('input'),
           upload = document.querySelectorAll('[name="upload"]');
 
@@ -17,7 +17,7 @@ const forms = (state) => {
     const path = {
         designer: 'assets/server.php',
         question: 'assets/question.php'
-    }
+    };
 
     const clearInputs = () => {
         inputs.forEach(item => {
@@ -25,8 +25,8 @@ const forms = (state) => {
         });
         upload.forEach(item => {
             item.previousElementSibling.textContent = "Файл не выбран";
-        })
-    }
+        });
+    };
 
     upload.forEach(item => {
         item.addEventListener('input', () => {
@@ -36,8 +36,8 @@ const forms = (state) => {
             arr[0].length > 8 ? dots = "..." : dots = '.';
             const name = arr[0].substring(0, 8) + dots + arr[1];
             item.previousElementSibling.textContent = name;
-        })
-    })
+        });
+    });
 
     form.forEach(item => {
         item.addEventListener('submit', (e) => {
