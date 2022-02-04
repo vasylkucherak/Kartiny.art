@@ -547,6 +547,7 @@ h2#calc {
   text-align: center;
   position: relative;
   z-index: -1000;
+  font-size: 20px;
 }
 .calc .button-order {
   margin-top: 6rem;
