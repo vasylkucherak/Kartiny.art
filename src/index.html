@@ -18,13 +18,13 @@
 				</button>
 				<ul class=burger-menu>
 					<li>
-						<a href="#">Картина из вашего фото</a>
-					</li>
-					<li>
-						<a href="#">Готовые картины</a>
+						<a href="#">О товаре</a>
 					</li>
 					<li>
 						<a href="#">Идеи подарков</a>
+					</li>
+					<li>
+						<a href="#">Взаимодействие</a>
 					</li>
 					<li>
 						<a href="#">Покупателям</a>
@@ -34,35 +34,34 @@
 			<div class="col-md-8 hidden-sm hidden-xs">
 				<ul class=header-menu>
 					<li>
-						<a href="#">Картина из вашего фото</a>
+						<a href="#">О товаре</a>
 						<ul class="burger-menu header-menu-sub">
-							<li><a href=#styles>Фотомозаика</a></li>
-							<li><a href=#styles>Шарж по фото</a></li>
-							<li><a href=#styles>Love is...</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Готовые картины</a>
-						<ul class="burger-menu header-menu-sub">
-							<li><a href=#portfolio>Портрет</a></li>
-							<li><a href=#portfolio>Живопись</a></li>
-							<li><a href=#portfolio>Коллаж</a></li>
+							<li><a href=#features>Наши преимущества</a></li>
+							<li><a href=#scheme>Процесс изготовления</a></li>
+							<li><a href=#often-questions>Часто задаваемые вопросы</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="#">Идеи подарков</a>
 						<ul class="burger-menu header-menu-sub">
-							<li><a href=#portfolio>Готовые картины</a></li>
-							<li><a href=#portfolio>Интерьерные постеры</a></li>
+							<li><a href=#styles>Популярные стили</a></li>
+							<li><a href=#portfolio>Примеры работ</a></li>
+							<li><a href=#sizes>Размеры и цены</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Взаимодействие</a>
+						<ul class="burger-menu header-menu-sub">
+							<li><a href=#calc>Калькулятор стоимости</a></li>
+							<li><a href=#consultation>Консультация</a></li>
+							<li><a href=#promo-2>Загрузить наш каталог</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="#">Покупателям</a>
 						<ul class="burger-menu header-menu-sub">
-							<li><a href=#often-questions>Срочное изготовление</a></li>
-							<li><a href=#often-questions>Доставка и оплата</a></li>
-							<li><a href=#scheme>Схема работы</a></li>
-							<li><a href=#footer>Контакты</a></li>
+							<li><a href=#feedback>Отзывы</a></li>
+							<li><a href=#consultation>Контакты</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -76,6 +75,7 @@
 	</header>
 	<main class=main>
 		<div class=container>
+			<div class="main__block"></div>
 			<div class=row>
 				<div class="col-md-3 col-sm-4 col-xs-5">
 					<p class=logo>Картины.art</p>
@@ -90,8 +90,8 @@
 					<p class=email>E-mail: <a href=mailto:info@kartiny.art>info@kartiny.art</a></p>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-7">
-					<p class=phone>8 800 234-23-34</p>
-					<p class=phone-whatsapp><img class=icons src=assets/img/telephone.svg alt><img class=icons src=assets/img/whatsapp.svg alt> +7 495 234-23-34</p>
+					<a class=phone href="tel:+88002342334">8 800 234-23-34</a><br>
+					<a class=phone-whatsapp href="tel:+74952342334"><img class=icons src=assets/img/telephone.svg alt><img class=icons src=assets/img/whatsapp.svg alt> +7 495 234-23-34</a>
 				</div>
 			</div>
 			<div class=row>
@@ -128,7 +128,7 @@
 			</div>
 		</div>
 	</main>
-	<section class=promo>
+	<section id="promo" class=promo>
 		<div class=container>
 			<div class=col-md-7>
 				<img class=promo-img src=assets/img/promo-1.png alt>
@@ -209,7 +209,7 @@
 	</section>
 	<section class="card card-1 wow fadeIn">
 		<div class=container>
-			<div class=card-block>
+			<div id="popart" class=card-block>
 				<div class=row>
 					<div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
 						<img src=assets/img/card-1.png alt>
@@ -228,7 +228,7 @@
 	<section class=calc>
 		<div class=container>
 			<p class=p-heading>Калькулятор</p>
-			<h2>Рассчитайте стоимость и получите скидку 30%</h2>
+			<h2 id="calc">Рассчитайте стоимость и получите скидку 30%</h2>
 			<div class=row>
 				<div class="col-md-4 col-offset-1">
 					<form class="form calc_form" action=# method=POST enctype=multipart/form-data>
@@ -319,7 +319,7 @@
 			<p class=portfolio-no>Таких портретов мы еще не делали, хотите быть первыми?</p>
 		</div>
 	</section>
-	<section class=gift>
+	<section id="gift" class=gift>
 		<div class=container>
 			<div class=col-md-6>
 				<p class=p-heading>Портрет по фото</p>
@@ -339,7 +339,7 @@
 			</div>
 		</div>
 	</section>
-	<section class=features>
+	<section id="features" class=features>
 		<div class=container>
 			<p class=p-heading>Наши преимущества</p>
 			<h2>Почему выбирают именно нас?</h2>
@@ -363,7 +363,7 @@
 			</div>
 		</div>
 	</section>
-	<section class=sizes>
+	<section id="sizes" class=sizes>
 		<div class=container>
 			<div class=p-heading>Популярные размеры и цены</div>
 			<h2>Можем изготовить картину любого размера!</h2>
@@ -398,10 +398,10 @@
 			</div>
 		</div>
 	</section>
-	<section class=scheme id=scheme>
+	<section class=scheme>
 		<div class=container>
 			<p class=p-heading>Как мы будем с вами работать</p>
-			<h2>Процесс изготовления картины</h2>
+			<h2 id=scheme>Процесс изготовления картины</h2>
 			<div class=row>
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class=scheme-block>
@@ -460,7 +460,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="card card-3 wow fadeIn">
+	<section id="card-3" class="card card-3 wow fadeIn">
 		<div class=container>
 			<div class=card-block>
 				<div class=row>
@@ -478,7 +478,7 @@
 			</div>
 		</div>
 	</section>
-	<section class=promo-2>
+	<section id="promo-2" class=promo-2>
 		<div class=container>
 			<div class=row>
 				<div class=col-md-5>
@@ -492,7 +492,7 @@
 			</div>
 		</div>
 	</section>
-	<div class=feedback>
+	<div id="feedback" class=feedback>
 		<div class=container>
 			<div class=feedback-slider style="position:relative; height: 400px;">
 				<button class="main-slider-btn main-prev-btn">
@@ -592,7 +592,7 @@
 	</section>
 	<section class=consultation>
 		<div class=container>
-			<p class=p-heading>Остались вопросы?</p>
+			<p id="consultation" class=p-heading>Остались вопросы?</p>
 			<h2>Получите консультацию художника!</h2>
 			<div class="col-md-10 col-md-offset-1">
 				<form action=# method=POST>
@@ -617,37 +617,31 @@
 						<th>Покупателям</th>
 					</tr>
 					<tr>
-						<td>Поп-арт</td>
-						<td>Фотомозаика</td>
-						<td>Готовые картины</td>
-						<td>Срочное изготовление</td>
+						<td><a href="#card-3">Маслом</a></td>
+						<td><a href="#styles">Акварелью</a></td>
+						<td><a href="#portfolio">Готовые картины</a></td>
+						<td><a href="#promo">Дизайн бесплатно</a></td>
 					</tr>
 					<tr>
-						<td>Живопись</td>
-						<td>Портрет маслом</td>
-						<td>Интерьерные постеры</td>
-						<td>Доставка и оплата</td>
+						<td><a href="#popart">Поп-арт</a></td>
+						<td><a href="#styles">Карандашом</a></td>
+						<td><a href="#styles">Популярные стили</a></td>
+						<td><a href="#scheme">Схема работы</a></td>
 					</tr>
 					<tr>
-						<td>Коллаж</td>
-						<td>Шарж по фото</td>
+						<td><a href="#gift">Живопись</a></td>
+						<td><a href="#styles">Ручкой</a></td>
 						<td></td>
-						<td>Схема работы</td>
-					</tr>
-					<tr>
-						<td>Портрет в образе</td>
-						<td>Love is...</td>
-						<td></td>
-						<td>Контакты</td>
+						<td><a href="#calc">Калькулятор</a></td>
 					</tr>
 				</table>
 			</div>
 			<div class="col-md-3 col-md-offset-1 col-sm-12">
 				<div class="col-md-12 col-sm-4 col-xs-12">
-					<p class=phone>8 800 234-23-34</p>
+					<a class="phone footer__phone" href="tel:+88002342334">8 800 234-23-34</a>
 				</div>
 				<div class="col-md-12 col-sm-4 col-xs-12">
-					<p class=phone-whatsapp>+7 495 234-23-34</p>
+					<a class="phone-whatsapp" href="tel:+74952342334">+7 495 234-23-34</a>
 				</div>
 				<div class="col-md-12 col-sm-4 col-xs-12">
 					<p>Круглосуточно, без выходных</p>

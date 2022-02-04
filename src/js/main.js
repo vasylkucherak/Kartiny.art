@@ -16,8 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
     modals();
-    sliders('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
-    sliders('.main-slider-item', 'vertical');
+    sliders('.feedback-slider-item', 'horizontal', 5000, '.main-prev-btn', '.main-next-btn');
+    sliders('.main-slider-item', 'vertical', 5000);
     forms();
     mask('[name="phone"]');
     checkTextInputs('[name="name"]');

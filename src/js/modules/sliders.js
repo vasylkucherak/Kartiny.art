@@ -1,4 +1,4 @@
-const sliders = (slides, dir, prev, next) => {
+const sliders = (slides, dir, time, prev, next) => {
     let slideIndex = 1,
         paused = false;
 
@@ -48,14 +48,14 @@ const sliders = (slides, dir, prev, next) => {
         if (dir === 'vertical') {
             paused = setInterval(function() {
                 plusSlides(1);
-                items[slideIndex - 1].classList.add('slideInDown')
-            }, 3000);
+                items[slideIndex - 1].classList.add('slideInUp')
+            }, time);
         } else {
             paused = setInterval(function() {
                 plusSlides(1);
                 items[slideIndex - 1].classList.remove('slideInRight');
                 items[slideIndex - 1].classList.add('slideInLeft');
-            }, 3000);
+            }, time);
         }
     }
 
