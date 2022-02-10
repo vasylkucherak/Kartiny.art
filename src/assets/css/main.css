@@ -1446,6 +1446,7 @@ p#consultation {
     display: none;
   }
   .header .burger img {
+    display: block;
     width: 2rem;
     height: 2rem;
     margin: 0 1rem;
@@ -1458,6 +1459,16 @@ p#consultation {
   }
   .main h1 {
     text-align: center;
+  }
+  .main .main__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .slider {
+    order: 2;
+  }
+  .main .text {
+    order: 1;
   }
   .promo p,
   .promo h2 {
@@ -1548,6 +1559,9 @@ p#consultation {
   }
 }
 @media (max-width: 767px) {
+  .main .main-slider img {
+    width: 546px;
+  }
   .main-features {
     max-width: 30rem;
     margin-left: auto;
@@ -1635,6 +1649,9 @@ p#consultation {
   }
   .p-heading {
     font-size: 1.5rem;
+  }
+  .main .main-slider img {
+    width: 290px;
   }
   .main-features {
     max-width: auto;

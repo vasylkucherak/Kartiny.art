@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
     modals();
-    sliders('.feedback-slider-item', 'horizontal', 5000, '.main-prev-btn', '.main-next-btn');
+    sliders('.feedback-slider-item', 'horizontal', 6000, '.main-prev-btn', '.main-next-btn');
     sliders('.main-slider-item', 'vertical', 5000);
     forms();
     mask('[name="phone"]');
