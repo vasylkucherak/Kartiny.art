@@ -1,5 +1,6 @@
-const burger = (menuSelector, burgerSelector) => {
+const burger = (menuSelector, menuItemSelector, burgerSelector) => {
     const menuElem = document.querySelector(menuSelector),
+          menuItems = menuElem.querySelectorAll(menuItemSelector),
           burgerElem = document.querySelector(burgerSelector);
 
     menuElem.style.display = 'none';
@@ -16,6 +17,12 @@ const burger = (menuSelector, burgerSelector) => {
         if (window.screen.availWidth > 992) {
             menuElem.style.display = 'none';
         }
+    });
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            menuElem.style.display = 'none';
+        });
     });
 };
 
